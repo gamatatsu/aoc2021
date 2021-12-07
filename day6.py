@@ -16,7 +16,6 @@ newrepDays = np.array([0 for i in range(0, 9)])
 fishNum = len(fish)
 
 for i in range(0, 256):
-    print(repDays, newrepDays)
     newFish = repDays[i % 7] + newrepDays[i % 9]
     fishNum += newFish
     repDays[i % 7] += newrepDays[i % 9]
